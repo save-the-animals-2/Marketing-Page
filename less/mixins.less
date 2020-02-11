@@ -1,22 +1,5 @@
 // Mixins Here
 
-.hover {
-	.btn:hover {
-		background-color: #FFFFFF;
-		color: black;
-	}
-}
-
-.nav {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	margin-top: 15px;
-	background: #F5F5F5;
-}
-
 .btn-layout (@justify, @align, @width, @text-align) {
 	display: flex;
 	justify-content: @justify;
@@ -28,9 +11,18 @@
 .btn-design (@background-color, @color, @weight, @font-size, @padding, @margin, @radius) {
 	background-color: @background-color;
 	color: @color;
-	font-weight: @weight;
+	weight: @weight;
 	font-size: @font-size;
 	padding: @padding;
 	margin: @margin;
 	border-radius: @radius;
+}
+
+.btn {
+	.btn-layout(center, center, 25%, center);
+	.btn-design(black, #FFFFFF, bold, 1.5em, 10px, 4px, 4px);
+	
+	@media @phone {
+		.btn-layout(center, center, 100%, center);
+	}
 }

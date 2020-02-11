@@ -1,15 +1,25 @@
-.hover .btn:hover {
-  background-color: #FFFFFF;
-  color: black;
-}
-.nav {
-  width: 100%;
+.btn {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 15px;
-  background: #F5F5F5;
+  width: 25%;
+  text-align: center;
+  background-color: black;
+  color: #FFFFFF;
+  weight: bold;
+  font-size: 1.5em;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 4px;
+}
+@media (max-width: 500px) {
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -147,7 +157,7 @@ html {
 }
 html,
 body {
-  font-family: 'Abel', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   color: #5E6164;
 }
 h1,
@@ -155,7 +165,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Prompt', sans-serif;
+  font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
 h2 {
@@ -165,8 +175,8 @@ h3 {
   font-size: 2.8rem;
 }
 p {
-  font-size: 1.5rem;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  line-height: 1.8;
 }
 .container {
   max-width: 1000px;
@@ -181,32 +191,24 @@ p {
   align-items: center;
   margin-top: 15px;
   background: #F5F5F5;
-  background-color: #23293B;
 }
 #nav-container h1 {
   font-size: 3rem;
   margin-top: 15px;
-  color: #FFFFFF;
 }
 #nav {
-  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 15px;
-  background: #F5F5F5;
-  flex-direction: row;
   margin-top: 10px;
 }
 @media (max-width: 500px) {
   #nav {
     justify-content: center;
     margin: 20px 0 5px 0;
+    flex-direction: column;
   }
 }
 #nav a {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
   color: gray;
@@ -220,9 +222,9 @@ p {
 footer {
   color: #22283B;
   background: #f4f4f4;
-  padding: 30px 0;
-  border: 1px double #e0e0e0;
-  border-radius: 20px;
+  padding: 20px 0;
+  border: 3px double #e0e0e0;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -233,42 +235,42 @@ footer {
 .home .intro p {
   padding: 0 15px;
 }
-.home .space-images {
+.home .animal-images {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-.home .space-images img {
+.home .animal-images img {
   width: 28%;
   margin: 20px 2.5%;
   border-radius: 20px;
   height: 100%;
 }
 @media (max-width: 500px) {
-  .home .space-images .main-header {
+  .home .animal-images .koala {
     display: none;
   }
 }
 @media (max-width: 500px) {
-  .home .space-images .blast {
+  .home .animal-images .snowleopard {
     width: 90%;
   }
 }
 @media (max-width: 500px) {
-  .home .space-images .sky {
+  .home .animal-images .gorilla {
     display: none;
   }
 }
-.home .visit-planets {
+.home .ways-to-help {
   padding: 15px;
 }
-.home .visit-planets h3 {
+.home .ways-to-help h3 {
   margin-top: 11px;
 }
-.home .visit-planets p {
+.home .ways-to-help p {
   margin-top: 13px;
 }
-.home .walk {
+.home .make-a-difference {
   margin-top: 60px;
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
@@ -276,71 +278,36 @@ footer {
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .home .walk {
+  .home .make-a-difference {
     flex-direction: column-reverse;
     align-content: center;
     justify-content: center;
   }
 }
-.home .walk .walk-text {
+.home .make-a-difference .make-a-difference {
   width: 50%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-text {
+  .home .make-a-difference .make-a-difference {
     width: 100%;
   }
 }
-.home .walk .walk-text h3 {
+.home .make-a-difference .make-a-difference h3 {
   margin-bottom: 10px;
 }
-.home .walk .walk-text p {
-  margin-bottom: 26px;
+.home .make-a-difference .make-a-difference p {
+  margin-bottom: 10px;
 }
-.home .walk .walk-text #btn-a {
-  text-decoration: none;
-}
-.home .walk .walk-text #btn-a .btn:hover {
-  background-color: #FFFFFF;
-  color: black;
-}
-.home .walk .walk-text .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-  text-align: center;
-  background-color: black;
-  color: #FFFFFF;
-  font-weight: bold;
-  font-size: 1.5em;
-  padding: 10px;
-  margin: 4px;
-  border-radius: 4px;
-}
-@media (max-width: 500px) {
-  .home .walk .walk-text .btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    text-align: center;
-  }
-}
-.home .walk .walk-text .btn:hover {
-  color: black;
-  background: red;
-  text-decoration: none;
-}
-.home .walk .walk-img {
+.home .make-a-difference .make-a-difference .btn {
   width: 46%;
   margin-left: 4%;
 }
 @media (max-width: 500px) {
-  .home .walk .walk-img {
+  .home .make-a-difference .make-a-difference .btn {
     width: 90%;
   }
 }
-.home .walk .walk-img img {
+.home .make-a-difference .make-a-difference .btn {
   width: 100%;
   height: auto;
   border-radius: 10px;
