@@ -1,0 +1,129 @@
+// Home Content
+
+.home {
+
+  .intro {
+
+    h2 {
+      padding: 15px;
+    }
+
+    p {
+      padding:0 15px;
+    }
+  
+
+  #polar {
+	width: 50%;
+	height: 50%;
+  }
+  
+  #main-header {
+	@media @phone {
+		width: 50%;
+	
+	}
+
+
+  .animal-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 90%;
+    }
+	
+	.koala { 
+	
+		@media @phone {
+		   display: none;
+		}
+	}
+	
+	.snowleopard { 
+	
+		@media @phone {
+			width: 90%;
+		}
+	}
+	.gorilla { 
+	
+		@media @phone {
+			display: none;
+		}
+	}
+  }
+
+  .ways-to-help {
+    padding: 15px;
+
+    h3 {
+      margin-top: 11px;
+    }
+
+    p {
+      margin-top: 13px;
+    }
+  }
+
+  .make-a-difference {
+    margin-top: 60px;
+    border-top: 1px solid @main-border-color;
+    padding: 50px 60px;
+    display: flex;
+    justify-content: center;
+	
+	@media @phone {
+		flex-direction: column-reverse;
+		align-content: center;
+		justify-content: center;
+	
+	}
+
+    .make-a-difference {
+      width: 50%;
+	  
+	  	@media @phone {
+			 width: 50%;
+	
+		}
+
+		h3 {
+			margin-bottom: 10px;
+        }
+
+	    p {
+		    margin-bottom: 10px;
+	    }
+		
+
+		.btn:hover {
+			color: black;
+			background: green;
+			text-decoration: none;
+		}
+
+
+		.btn {
+			width: 46%;
+			margin-left: 4%;
+	  
+	  	@media @phone {
+			width: 55%;
+	
+		}
+      
+      .btn {
+        width: 75%;
+        height: auto;
+        border-radius: 10px;
+		}		
+      
+	 }
+	}
+   
+ }// home
